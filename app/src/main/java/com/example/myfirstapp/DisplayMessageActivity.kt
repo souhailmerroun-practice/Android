@@ -2,7 +2,6 @@ package com.example.myfirstapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.content.Intent
 import android.widget.TextView
 
 class DisplayMessageActivity : AppCompatActivity() {
@@ -14,7 +13,7 @@ class DisplayMessageActivity : AppCompatActivity() {
         val message = intent.getStringExtra(EXTRA_MESSAGE)
 
         // Capture the layout's TextView and set the string as its text
-        val textView = findViewById<TextView>(R.id.textView).apply {
+        val textView = findViewById<TextView>(R.id.editTextTextPersonName).apply {
             text = message
         }
     }
